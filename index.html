@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tau Ji Farm — Pandit Vishnu Dutt · Bundi, Rajasthan</title>
+<meta name="description" content="Tau Ji Farm (Pandit Vishnu Dutt), near Lakshmipura and Soonsadiya in Nainwa Tehsil, Bundi district, Rajasthan. Map, location details and contact information.">
+<meta property="og:title" content="Tau Ji Farm — Pandit Vishnu Dutt">
+<meta property="og:description" content="Find Tau Ji Farm near Lakshmipura and Soonsadiya in Bundi district, Rajasthan. View map and contact details.">
+<meta property="og:image" content="assets/img/hero-aravalli-farm.jpg">
+<meta name="theme-color" content="#2c2118">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --soil:#2c2118;
+    --bark:#463225;
+    --bark-soft:#5c4433;
+    --gold:#c68a2e;
+    --gold-light:#e8b552;
+    --wheat:#f2e2c1;
+    --cream:#faf6ee;
+    --paper:#fffdf8;
+    --green:#3d5c3a;
+    --green-deep:#233626;
+    --ink:#2a221b;
+    --ink-soft:#6b5c4e;
+    --line:rgba(70,50,37,.16);
+    --shadow:0 18px 40px -20px rgba(44,33,24,.45);
+    --radius:18px;
+    --max:1180px;
+    --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+    --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+  p{margin:0 0 1em}
+  .wrap{width:min(100% - 2.6rem,var(--max));margin-inline:auto}
+  .eyebrow{
+    font-family:var(--font-body);
+    font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold);margin:0 0 .9rem;
+  }
+  .lede{font-size:1.1rem;color:var(--ink-soft);max-width:62ch}
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:fixed;inset:0 0 auto 0;z-index:60;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding:.9rem clamp(1rem,4vw,2.4rem);
+    background:rgba(250,246,238,0);
+    border-bottom:1px solid transparent;
+    transition:background .35s ease,border-color .35s ease,padding .35s ease;
+  }
+  .nav.is-stuck{
+    background:rgba(250,246,238,.94);
+    backdrop-filter:blur(12px);
+    border-bottom-color:var(--line);
+    padding-block:.65rem;
+  }
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .brand-mark{
+    width:38px;height:38px;border-radius:50%;
+    display:grid;place-items:center;flex:none;
+    background:var(--green-deep);color:var(--wheat);
+    font-family:var(--font-display);font-size:1rem;font-weight:700;
+    box-shadow:inset 0 0 0 1px rgba(242,226,193,.25);
+  }
+  .brand-text{display:flex;flex-direction:column;line-height:1.15}
+  .brand-name{font-family:var(--font-display);font-size:1.12rem;font-weight:600;color:#fff;transition:color .35s}
+  .brand-sub{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);transition:color .35s}
+  .nav.is-stuck .brand-name{color:var(--soil)}
+  .nav.is-stuck .brand-sub{color:var(--ink-soft)}
+  .nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none;margin:0;padding:0}
+  .nav-links a{
+    text-decoration:none;font-size:.86rem;font-weight:500;letter-spacing:.02em;
+    color:rgba(255,255,255,.9);position:relative;padding-block:.2rem;
+  }
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold-light);
+    transition:width .3s ease;
+  }
+  .nav-links a:hover::after{width:100%}
+  .nav.is-stuck .nav-links a{color:var(--ink)}
+  .nav.is-stuck .nav-links a::after{background:var(--gold)}
+  .nav-cta{
+    background:var(--gold);color:#241a10 !important;padding:.55rem 1.05rem;border-radius:999px;
+    font-weight:600;font-size:.82rem !important;
+  }
+  .nav-cta::after{display:none}
+  .nav-toggle{
+    display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;
+    border-radius:10px;padding:.45rem .6rem;cursor:pointer;
+  }
+  .nav.is-stuck .nav-toggle{color:var(--ink);border-color:var(--line)}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;min-height:min(92vh,780px);display:flex;align-items:flex-end;
+    padding:8rem 0 4rem;color:#fff;overflow:hidden;
+    background:var(--soil);
+  }
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:heroDrift 24s ease-in-out infinite alternate}
+  @keyframes heroDrift{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.1) translate3d(0,-8px,0)}}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(24,18,13,.55) 0%,rgba(24,18,13,.18) 32%,rgba(24,18,13,.55) 74%,rgba(24,18,13,.88) 100%),
+      radial-gradient(120% 80% at 12% 90%,rgba(35,54,38,.55),transparent 60%);
+  }
+  .hero-inner{position:relative;z-index:2}
+  .hero-image-note{position:absolute;right:clamp(1rem,4vw,2.4rem);bottom:1rem;z-index:2;font-size:.68rem;letter-spacing:.04em;color:rgba(255,255,255,.72);background:rgba(24,18,13,.34);padding:.3rem .55rem;border-radius:5px}
+  .hero .eyebrow{color:var(--gold-light)}
+  .hero h1{
+    font-size:clamp(2.6rem,7vw,5.1rem);
+    max-width:15ch;margin-bottom:1.1rem;
+    text-shadow:0 2px 24px rgba(0,0,0,.3);
+  }
+  .hero h1 em{font-style:italic;color:var(--gold-light)}
+  .hero-sub{max-width:52ch;font-size:clamp(1rem,2.1vw,1.22rem);color:rgba(255,255,255,.88);margin-bottom:2rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:2.6rem}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;
+    font-size:.9rem;font-weight:600;letter-spacing:.01em;
+    border:1px solid transparent;cursor:pointer;transition:transform .2s,background .25s,color .25s,border-color .25s;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--gold);color:#241a10}
+  .btn-primary:hover{background:var(--gold-light)}
+  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.06)}
+  .btn-ghost:hover{background:rgba(255,255,255,.16)}
+  .hero-meta{
+    display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;padding-top:1.5rem;
+    border-top:1px solid rgba(255,255,255,.22);
+    font-size:.8rem;letter-spacing:.02em;color:rgba(255,255,255,.78);
+  }
+  .hero-meta span{display:inline-flex;align-items:center;gap:.45rem}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--gold-light);flex:none}
+
+  /* ---------- Sections ---------- */
+  section{padding:clamp(3.6rem,7vw,6.2rem) 0}
+  .section-head{max-width:64ch;margin-bottom:clamp(1.8rem,4vw,3rem)}
+  .section-head h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:.8rem}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .split.flip .split-media{order:-1}
+
+  .about{background:var(--paper)}
+  .about-body p{color:var(--ink-soft)}
+  .about-body p:last-of-type{margin-bottom:1.6rem}
+  .signature{
+    font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--bark);
+    padding-left:1rem;border-left:2px solid var(--gold);
+  }
+  .media-frame{
+    position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+    aspect-ratio:4/3.2;background:var(--wheat);
+  }
+  .media-frame img{width:100%;height:100%;object-fit:cover}
+  .media-frame.small{aspect-ratio:4/5}
+  .badge{
+    position:absolute;left:1rem;bottom:1rem;z-index:2;
+    background:rgba(250,246,238,.94);color:var(--bark);
+    padding:.45rem .8rem;border-radius:999px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+    backdrop-filter:blur(6px);
+  }
+
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line);border-radius:var(--radius);overflow:hidden;
+    margin-top:clamp(2rem,4vw,3.4rem);
+  }
+  .stat{background:var(--paper);padding:1.5rem 1.3rem}
+  .stat b{display:block;font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--green);line-height:1.1}
+  .stat span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* ---------- Crops ---------- */
+  .crops{background:linear-gradient(180deg,#f6efe2,#faf6ee)}
+  .crop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+  .crop{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.5rem 1.4rem;transition:transform .3s,box-shadow .3s,border-color .3s;
+  }
+  .crop:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(198,138,46,.4)}
+  .crop .icon{
+    width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin-bottom:.9rem;
+    background:rgba(198,138,46,.12);color:var(--gold);
+  }
+  .crop .icon svg{width:22px;height:22px}
+  .crop h3{font-size:1.15rem;margin-bottom:.35rem}
+  .crop p{font-size:.92rem;color:var(--ink-soft);margin:0}
+  .crop .season{
+    display:inline-block;margin-top:.9rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--green);font-weight:600;
+  }
+
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--soil);color:#fff}
+  .gallery .section-head h2{color:#fff}
+  .gallery .lede{color:rgba(255,255,255,.68)}
+  .gallery .eyebrow{color:var(--gold-light)}
+  .gal-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:.75rem;
+  }
+  .gal-item{
+    position:relative;overflow:hidden;border-radius:14px;cursor:zoom-in;border:0;padding:0;background:#1b1510;
+  }
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .4s;opacity:.92}
+  .gal-item:hover img{transform:scale(1.07);opacity:1}
+  .gal-item::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,15,11,.75));
+    opacity:0;transition:opacity .4s;
+  }
+  .gal-item:hover::after{opacity:1}
+  .gal-item .gal-caption{
+    position:absolute;left:.8rem;right:.8rem;bottom:.7rem;z-index:2;
+    font-size:.74rem;color:rgba(255,255,255,.9);text-align:left;
+    opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s;
+  }
+  .gal-item:hover .gal-caption{opacity:1;transform:none}
+  .g-tall{grid-row:span 2}
+  .g-wide{grid-column:span 2}
+  .gal-note{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:1.1rem}
+
+  /* ---------- Map ---------- */
+  .visit{background:var(--paper)}
+  .map-shell{
+    border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+    box-shadow:var(--shadow);background:#e9e2d3;
+  }
+  .map-shell iframe{width:100%;height:clamp(320px,46vw,460px);border:0;display:block;filter:saturate(1.05)}
+  .visit-grid{display:grid;grid-template-columns:1fr .85fr;gap:clamp(1.6rem,4vw,3.2rem);align-items:start}
+  .info-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;
+  }
+  .info-card + .info-card{margin-top:1rem}
+  .info-card h3{font-size:1.05rem;margin-bottom:.9rem;display:flex;align-items:center;gap:.55rem}
+  .info-card h3 svg{width:18px;height:18px;color:var(--gold);flex:none}
+  .info-card address{font-style:normal;color:var(--ink-soft);line-height:1.7}
+  .info-card .coords{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.82rem;color:var(--bark);background:rgba(198,138,46,.09);
+    padding:.5rem .7rem;border-radius:8px;display:inline-block;margin-top:.6rem;
+  }
+  .kv{display:flex;justify-content:space-between;gap:1rem;font-size:.9rem;padding:.45rem 0;border-bottom:1px dashed var(--line)}
+  .kv:last-child{border-bottom:0}
+  .kv dt{color:var(--ink-soft)}
+  .kv dd{margin:0;font-weight:500;text-align:right}
+  .placeholder{
+    display:inline-flex;align-items:center;gap:.4rem;
+    color:var(--ink-soft);font-size:.85rem;
+    border:1px dashed rgba(107,92,78,.45);border-radius:8px;padding:.25rem .6rem;
+  }
+  .hint{font-size:.72rem;color:var(--ink-soft);opacity:.85}
+  .visit-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.1rem}
+  .btn-dark{background:var(--green-deep);color:#f4ead6}
+  .btn-dark:hover{background:var(--green)}
+  .btn-outline{border-color:var(--line);color:var(--bark);background:transparent}
+  .btn-outline:hover{background:rgba(70,50,37,.06)}
+
+  /* ---------- Contact ---------- */
+  .contact{background:linear-gradient(180deg,#f2e7d3,#eadfc8)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  .contact-list{list-style:none;padding:0;margin:0}
+  .contact-list li{
+    display:flex;gap:1rem;padding:1.15rem 0;border-bottom:1px solid rgba(70,50,37,.14);
+  }
+  .contact-list li:first-child{padding-top:0}
+  .contact-list .ci{
+    width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;
+    background:var(--paper);color:var(--green);box-shadow:0 2px 10px -4px rgba(44,33,24,.35);
+  }
+  .contact-list .ci svg{width:19px;height:19px}
+  .contact-list strong{display:block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-bottom:.2rem}
+  .contact-list a,.contact-list span{font-size:1rem;color:var(--ink);text-decoration:none}
+  .contact-list a:hover{color:var(--gold)}
+  form.enquiry{
+    background:var(--paper);border-radius:var(--radius);padding:clamp(1.4rem,3vw,2rem);
+    box-shadow:var(--shadow);border:1px solid var(--line);
+  }
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-bottom:.4rem}
+  .field input,.field textarea,.field select{
+    width:100%;padding:.75rem .85rem;border:1px solid var(--line);border-radius:10px;
+    font:inherit;font-size:.94rem;color:var(--ink);background:#fffdf9;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .field input:focus,.field textarea:focus,.field select:focus{
+    outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,138,46,.15);
+  }
+  .field textarea{min-height:112px;resize:vertical}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .form-note{font-size:.76rem;color:var(--ink-soft);margin:.9rem 0 0}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--soil);color:rgba(255,255,255,.72);padding:3rem 0 2rem;font-size:.86rem}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.14)}
+  .foot-brand .brand-name{color:#fff}
+  .foot-brand .brand-sub{color:rgba(255,255,255,.55)}
+  .foot-brand p{max-width:34ch;margin:1rem 0 0;color:rgba(255,255,255,.6)}
+  .foot-cols{display:flex;flex-wrap:wrap;gap:3rem}
+  .foot-cols h4{font-family:var(--font-body);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.8rem}
+  .foot-cols ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+  .foot-cols a{text-decoration:none;color:rgba(255,255,255,.72)}
+  .foot-cols a:hover{color:#fff}
+  .credits{padding-top:1.6rem;font-size:.74rem;line-height:1.8;color:rgba(255,255,255,.45)}
+  .credits b{color:rgba(255,255,255,.62);font-weight:600}
+  .credits a{color:rgba(255,255,255,.55)}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{
+    position:fixed;inset:0;z-index:100;display:none;place-items:center;
+    background:rgba(18,13,9,.94);backdrop-filter:blur(6px);padding:clamp(1rem,4vw,3rem);
+  }
+  .lightbox.open{display:grid}
+  .lightbox figure{margin:0;max-width:min(1100px,92vw);text-align:center}
+  .lightbox img{max-height:76vh;width:auto;margin-inline:auto;border-radius:10px;box-shadow:0 30px 80px -30px #000}
+  .lightbox figcaption{color:rgba(255,255,255,.8);font-size:.85rem;margin-top:1rem}
+  .lb-btn{
+    position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);
+    color:#fff;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+    cursor:pointer;font-size:1.2rem;transition:background .2s;
+  }
+  .lb-btn:hover{background:rgba(255,255,255,.22)}
+  .lb-close{top:1.2rem;right:1.2rem}
+  .lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+  .lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    .split,.visit-grid,.contact-grid{grid-template-columns:1fr}
+    .split.flip .split-media{order:0}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .gal-grid{grid-template-columns:repeat(3,1fr)}
+    .nav-links{gap:1.1rem}
+  }
+  @media (max-width:760px){
+    .nav-links{
+      position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;
+      gap:0;padding:.4rem 1.4rem 1.2rem;background:rgba(250,246,238,.98);
+      border-bottom:1px solid var(--line);display:none;
+    }
+    .nav-links.open{display:flex}
+    .nav-links li{width:100%}
+    .nav-links a{display:block;padding:.7rem 0;color:var(--ink) !important;border-bottom:1px solid var(--line)}
+    .nav-links a::after{display:none}
+    .nav-cta{display:inline-block;margin-top:.6rem;border-bottom:0 !important;padding:.6rem 1.1rem !important}
+    .nav-toggle{display:block}
+    .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+    .g-wide{grid-column:span 2}
+    .two{grid-template-columns:1fr}
+    .hero{padding-top:7rem;min-height:86vh}
+    .foot-cols{gap:2rem}
+    .lb-prev{left:.4rem}.lb-next{right:.4rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none !important;transition:none !important}
+    .reveal{opacity:1;transform:none}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- Language Toggle ---------- */
+  .lang-toggle{
+    background:none;border:1px solid rgba(255,255,255,.4);color:#fff;
+    border-radius:8px;padding:.35rem .7rem;cursor:pointer;
+    font-size:.8rem;font-weight:600;letter-spacing:.03em;
+    transition:background .2s,color .35s,border-color .35s;
+    white-space:nowrap;
+  }
+  .lang-toggle:hover{background:rgba(255,255,255,.12)}
+  .nav.is-stuck .lang-toggle{color:var(--ink);border-color:var(--line)}
+  .nav.is-stuck .lang-toggle:hover{background:rgba(70,50,37,.06)}
+  @media (max-width:760px){
+    .lang-toggle{font-size:.74rem;padding:.3rem .55rem}
+  }
+
+  /* ---------- Crop Filters ---------- */
+  .crop-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+  .filter-btn{
+    background:var(--paper);border:1px solid var(--line);color:var(--ink-soft);
+    padding:.45rem 1.05rem;border-radius:999px;font-size:.82rem;font-weight:600;
+    cursor:pointer;transition:all .2s ease;
+  }
+  .filter-btn:hover{border-color:var(--gold);color:var(--ink)}
+  .filter-btn.active{background:var(--green-deep);color:#fff;border-color:var(--green-deep)}
+  .crop.is-hidden{display:none}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--paper);border-top:1px solid var(--line)}
+  .faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:.9rem}
+  .faq-item{
+    border:1px solid var(--line);border-radius:14px;background:#fff;
+    overflow:hidden;transition:border-color .25s,box-shadow .25s;
+  }
+  .faq-item[open]{border-color:rgba(198,138,46,.5);box-shadow:0 8px 24px -12px rgba(44,33,24,.15)}
+  .faq-q{
+    padding:1.15rem 1.4rem;font-weight:600;font-size:1rem;color:var(--bark);
+    cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    user-select:none;
+  }
+  .faq-q::-webkit-details-marker{display:none}
+  .faq-icon{
+    width:24px;height:24px;border-radius:50%;background:rgba(198,138,46,.12);
+    display:grid;place-items:center;color:var(--gold);flex:none;transition:transform .3s;
+  }
+  .faq-item[open] .faq-icon{transform:rotate(180deg);background:var(--gold);color:#241a10}
+  .faq-a{padding:0 1.4rem 1.25rem;color:var(--ink-soft);font-size:.93rem;line-height:1.65;border-top:1px dashed var(--line);padding-top:1rem;margin:0}
+
+  /* ---------- Floating Quick Actions & Toast ---------- */
+  .float-actions{
+    position:fixed;right:1.3rem;bottom:1.3rem;z-index:50;
+    display:flex;flex-direction:column;gap:.65rem;align-items:flex-end;
+  }
+  .float-btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.75rem 1.2rem;border-radius:999px;text-decoration:none;
+    font-size:.85rem;font-weight:600;box-shadow:0 10px 25px -6px rgba(0,0,0,.3);
+    transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;
+  }
+  .float-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(0,0,0,.4)}
+  .float-wa{background:#25D366;color:#fff}
+  .float-top{
+    background:var(--soil);color:#fff;width:44px;height:44px;padding:0;
+    justify-content:center;border-radius:50%;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;
+  }
+  .float-top.visible{opacity:1;pointer-events:auto}
+  .copy-btn{
+    margin-left:.6rem;background:none;border:1px dashed var(--line);
+    color:var(--bark);border-radius:6px;padding:.2rem .55rem;
+    font-size:.74rem;cursor:pointer;transition:all .2s;font-family:inherit;
+  }
+  .copy-btn:hover{background:rgba(198,138,46,.12);border-color:var(--gold);color:var(--gold)}
+  .toast{
+    position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--soil);color:#fff;padding:.65rem 1.4rem;border-radius:999px;
+    font-size:.86rem;font-weight:500;box-shadow:0 12px 30px -6px rgba(0,0,0,.35);
+    opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:99;
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">तौ</span>
+    <span class="brand-text">
+      <span class="brand-name">Tau Ji Farm</span>
+      <span class="brand-sub" data-i18n="brand_sub">Bundi · Rajasthan</span>
+    </span>
+  </a>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav_farm">The Farm</a></li>
+      <li><a href="#growing" data-i18n="nav_grow">What We Grow</a></li>
+      <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+      <li><a href="#visit" data-i18n="nav_visit">Visit</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav_cta">Get in Touch</a></li>
+    </ul>
+  </nav>
+  <div class="nav-controls" style="display:flex;align-items:center;gap:.6rem">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">हिन्दी</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/img/hero-aravalli-farm.jpg" alt="Representative view of agricultural fields in the Aravalli region of Rajasthan" fetchpriority="high">
+  </div>
+  <span class="hero-image-note" data-i18n="hero_image_note">Representative regional photo · not the farm</span>
+  <div class="wrap hero-inner">
+    <p class="eyebrow" data-i18n="hero_eyebrow">Lakshmipura · Soonsadiya · Nainwa, Bundi</p>
+    <h1 data-i18n-html="hero_title">Tau Ji Farm <em>&amp;</em> the land of Pandit Vishnu&nbsp;Dutt</h1>
+    <p class="hero-sub" data-i18n="hero_sub">
+      A farm in the Bundi countryside, in a landscape shaped by seasonal fields, village life,
+      and the long rhythms of rural Rajasthan.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#visit">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span data-i18n="hero_btn_directions">Directions to the farm</span>
+      </a>
+      <a class="btn btn-ghost" href="#gallery" data-i18n="hero_btn_gallery">See the farm in pictures</a>
+    </div>
+    <div class="hero-meta">
+      <span><i class="dot"></i><span data-i18n="hero_meta_location">Nainwa Tehsil, Bundi district</span></span>
+      <span><i class="dot"></i><span data-i18n="hero_meta_coords">25.5894° N, 75.9893° E</span></span>
+      <span><i class="dot"></i><span data-i18n="hero_meta_note">Check visiting details first</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="split">
+      <div class="about-body reveal">
+        <p class="eyebrow" data-i18n="about_eyebrow">About the location</p>
+        <div class="section-head" style="margin-bottom:1.2rem">
+          <h2 data-i18n-html="about_title">Find the farm<br>in Bundi district.</h2>
+        </div>
+        <p data-i18n-html="about_p1">
+          Tau Ji Farm (Pandit Vishnu Dutt) is listed in <strong>Lakshmipura</strong>, near
+          Soonsadiya village in Nainwa Tehsil, Bundi district. The location and farm name come
+          from the public map listing; a fuller account of the family, its history and the land
+          is best told by the people who work it.
+        </p>
+        <p data-i18n-html="about_p2">
+          Bundi's farming calendar follows two broad seasons: <em>rabi</em>, the cool-season
+          crops, and <em>kharif</em>, which follows the monsoon. This page introduces that local
+          setting; the farm's crops, livestock, facilities and visiting arrangements have not
+          been confirmed and should be updated by the family.
+        </p>
+        <p data-i18n="about_p3">
+          If you are hoping to visit, please contact the family first. Access, opening times,
+          available activities and hospitality have not been confirmed in the public listing.
+        </p>
+      </div>
+      <div class="split-media reveal">
+        <div class="media-frame small">
+          <span class="badge" data-i18n="badge_rep_image">Representative image</span>
+          <img src="assets/img/south-rajasthan-farming.jpg" alt="Rural farming landscape in south Rajasthan" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b data-i18n="stat_lakshmipura">Lakshmipura</b><span data-i18n="stat_locality">Map pin locality</span></div>
+      <div class="stat"><b data-i18n="stat_soonsadiya">Soonsadiya</b><span data-i18n="stat_village">Nearby village</span></div>
+      <div class="stat"><b data-i18n="stat_nainwa">Nainwa</b><span data-i18n="stat_tehsil">Tehsil</span></div>
+      <div class="stat"><b data-i18n="stat_bundi">Bundi</b><span data-i18n="stat_district">District · Rajasthan</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CROPS ============ -->
+<section class="crops" id="growing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="crops_eyebrow">From the fields</p>
+      <h2 data-i18n="crops_title">A farm in Rajasthan's seasons</h2>
+      <p class="lede" data-i18n="crops_lede">
+        These cards describe common crops and farm life in the wider region, not a confirmed
+        inventory for Tau Ji Farm. Please check with the family before enquiring about specific produce or activities.
+      </p>
+    </div>
+
+    <div class="crop-grid">
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21V9"/><path d="M12 9c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 13c0-3-2-5-5-5 0 3 2 5 5 5z"/><path d="M12 17c0-3 2-5 5-5 0 3-2 5-5 5z"/></svg></div>
+        <h3 data-i18n="crop_wheat_title">Wheat</h3>
+        <p data-i18n-html="crop_wheat_desc">A familiar <em>rabi</em> crop across the region. Tau Ji Farm's current planting has not been confirmed.</p>
+        <span class="season" data-i18n="crop_wheat_season">Regional context · Rabi</span>
+      </article>
+
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg></div>
+        <h3 data-i18n="crop_mustard_title">Mustard</h3>
+        <p data-i18n="crop_mustard_desc">A winter crop seen in Rajasthan's farm landscapes. Confirm with the family whether it is grown here.</p>
+        <span class="season" data-i18n="crop_mustard_season">Regional context · Rabi</span>
+      </article>
+
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21V8"/><circle cx="12" cy="6" r="2.2"/><path d="M12 12c3 0 5-2 5-4M12 16c-3 0-5-2-5-4M12 20c3 0 5-2 5-4"/></svg></div>
+        <h3 data-i18n-html="crop_orchards_title">Orchards &amp; trees</h3>
+        <p data-i18n="crop_orchards_desc">Fruit trees and shade are part of many rural holdings; orchard details for this farm are not listed.</p>
+        <span class="season" data-i18n="crop_orchards_season">Ask the family</span>
+      </article>
+
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 16h16"/><path d="M6 16v-4a6 6 0 0 1 12 0v4"/><path d="M9 20h6"/><path d="M12 6V4"/></svg></div>
+        <h3 data-i18n="crop_livestock_title">Livestock</h3>
+        <p data-i18n="crop_livestock_desc">Livestock is common on farms in the area. Whether Tau Ji Farm keeps animals or sells dairy is unconfirmed.</p>
+        <span class="season" data-i18n="crop_livestock_season">Ask the family</span>
+      </article>
+
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20c0-6 4-10 8-10s8 4 8 10"/><path d="M12 10V4"/><path d="M9 6c0-2 1.3-3 3-3s3 1 3 3"/></svg></div>
+        <h3 data-i18n="crop_veg_title">Seasonal vegetables</h3>
+        <p data-i18n="crop_veg_desc">Vegetable growing varies with water and season. No crop list is available for this farm yet.</p>
+        <span class="season" data-i18n="crop_veg_season">Season dependent</span>
+      </article>
+
+      <article class="crop reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20h18"/><path d="M7 20v-6l5-6 5 6v6"/><path d="M10 20v-3h4v3"/></svg></div>
+        <h3 data-i18n="crop_other_title">Other field crops</h3>
+        <p data-i18n="crop_other_desc">Pulses and fodder crops are part of the wider agricultural mix; ask the family about the current season.</p>
+        <span class="season" data-i18n="crop_other_season">Varies by season</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="gal_eyebrow">Gallery</p>
+      <h2 data-i18n-html="gal_title">Rajasthan farming,<br>through the seasons.</h2>
+      <p class="lede" data-i18n="gal_lede">
+        Representative images from farms and rural settings across India — not photographs of Tau Ji Farm. Click any picture to open it full size.
+      </p>
+    </div>
+
+    <div class="gal-grid">
+      <button class="gal-item g-wide g-tall" data-src="assets/img/hero-aravalli-farm.jpg" data-cap="Agricultural fields in the Aravalli region of Rajasthan — representative image" data-cap-key="gal_cap_1">
+        <img src="assets/img/hero-aravalli-farm.jpg" alt="Representative agricultural fields in Rajasthan's Aravalli region" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_1">Aravalli region · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/wheat-golden.jpg" data-cap="Golden wheat in a field — representative image" data-cap-key="gal_cap_2">
+        <img src="assets/img/wheat-golden.jpg" alt="Representative golden wheat field" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_2">Golden wheat · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/mustard-rajasthan.jpg" data-cap="Mustard crop in Rajasthan — representative image" data-cap-key="gal_cap_3">
+        <img src="assets/img/mustard-rajasthan.jpg" alt="Representative mustard crop in Rajasthan" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_3">Mustard · representative image</span>
+      </button>
+      <button class="gal-item g-tall" data-src="assets/img/harvest-wheat.jpg" data-cap="Wheat harvest in Raisen district, Madhya Pradesh — representative image" data-cap-key="gal_cap_4">
+        <img src="assets/img/harvest-wheat.jpg" alt="Representative wheat harvest in Madhya Pradesh" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_4">Wheat harvest · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/wheat-closeup.jpg" data-cap="Wheat plants in a field — representative image" data-cap-key="gal_cap_5">
+        <img src="assets/img/wheat-closeup.jpg" alt="Representative close-up of wheat plants in a field" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_5">Wheat plants · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/tractor-ploughing.jpg" data-cap="Tractor ploughing a field — representative image" data-cap-key="gal_cap_6">
+        <img src="assets/img/tractor-ploughing.jpg" alt="Representative photo of a tractor ploughing a field" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_6">Tractor ploughing · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/plough-field.jpg" data-cap="Field ploughing — representative image" data-cap-key="gal_cap_7">
+        <img src="assets/img/plough-field.jpg" alt="Representative field ploughing with a tractor" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_7">Field ploughing · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/cattle-rajasthan.jpg" data-cap="Cattle at a village home in Rajasthan — representative image" data-cap-key="gal_cap_8">
+        <img src="assets/img/cattle-rajasthan.jpg" alt="Representative photo of a cow and calf in Rajasthan" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_8">Cattle · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/mango-orchard.jpg" data-cap="A mango orchard in Bihar — representative image, not the farm" data-cap-key="gal_cap_9">
+        <img src="assets/img/mango-orchard.jpg" alt="Representative mango orchard photograph from Bihar" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_9">Orchard · representative image</span>
+      </button>
+      <button class="gal-item g-wide" data-src="assets/img/village-well.jpg" data-cap="A village well in India — representative image" data-cap-key="gal_cap_10">
+        <img src="assets/img/village-well.jpg" alt="Representative image of a village water well in India" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_10">Village well · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/farm-view-malasar.jpg" data-cap="A farm view from Malasar village — representative image" data-cap-key="gal_cap_11">
+        <img src="assets/img/farm-view-malasar.jpg" alt="Representative farm view from Malasar village" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_11">Malasar · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/south-rajasthan-farming.jpg" data-cap="Farming landscape in south Rajasthan — representative image" data-cap-key="gal_cap_12">
+        <img src="assets/img/south-rajasthan-farming.jpg" alt="Representative farming landscape in south Rajasthan" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_12">South Rajasthan · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/wheat-haryana.jpg" data-cap="Wheat field in Haryana — representative image" data-cap-key="gal_cap_13">
+        <img src="assets/img/wheat-haryana.jpg" alt="Representative wheat fields in Haryana" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_13">Haryana · representative image</span>
+      </button>
+      <button class="gal-item" data-src="assets/img/aravalli-fields-b.jpg" data-cap="Agricultural land near Udaipur, Rajasthan — representative image" data-cap-key="gal_cap_14">
+        <img src="assets/img/aravalli-fields-b.jpg" alt="Representative farm in the Aravalli Hills near Udaipur" loading="lazy">
+        <span class="gal-caption" data-i18n="gal_item_14">Near Udaipur · representative image</span>
+      </button>
+    </div>
+    <p class="gal-note" data-i18n="gal_note">
+      Every photo is a representative image from Wikimedia Commons, not a photo of Tau Ji Farm.
+      Open licences and per-image credit links are provided in the footer. Replace these with the
+      farm's own photographs when available.
+    </p>
+  </div>
+</section>
+
+<!-- ============ VISIT / MAP ============ -->
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="visit_eyebrow">Find us</p>
+      <h2 data-i18n="visit_title">How to find the farm</h2>
+      <p class="lede" data-i18n="visit_lede">
+        The map listing places Tau Ji Farm near Lakshmipura and Soonsadiya, in Nainwa Tehsil,
+        Bundi district. Confirm the final route with the family before travelling.
+      </p>
+    </div>
+
+    <div class="map-shell reveal">
+      <iframe
+        title="Map showing Tau Ji Farm near Lakshmipura, Soonsadiya, Nainwa, Bundi, Rajasthan"
+        src="https://maps.google.com/maps?q=25.5894322,75.9893278&z=13&hl=en&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="visit-grid" style="margin-top:1.4rem">
+      <div>
+        <div class="info-card reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span data-i18n="visit_addr_title">Address</span>
+          </h3>
+          <address data-i18n-html="visit_address">
+            Tau Ji Farm (Pandit Vishnu Dutt)<br>
+            Lakshmipura, Soonsadiya<br>
+            Nainwa Tehsil, Bundi District<br>
+            Rajasthan, India
+          </address>
+          <div class="coords">25.5894322° N, 75.9893278° E</div>
+          <div class="visit-actions">
+            <a class="btn btn-dark" href="https://maps.google.com/?cid=11664355672637470509" target="_blank" rel="noopener" data-i18n="btn_gmaps">
+              Open in Google Maps
+            </a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=25.5894322,75.9893278" target="_blank" rel="noopener" data-i18n="btn_directions">
+              Get directions
+            </a>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span data-i18n="visit_info_title">Visiting</span>
+          </h3>
+          <dl style="margin:0">
+            <div class="kv"><dt data-i18n="visit_season_lbl">Visiting season</dt><dd><span class="placeholder" data-i18n="visit_season_val">Ask the family</span></dd></div>
+            <div class="kv"><dt data-i18n="visit_hours_lbl">Opening times</dt><dd><span class="placeholder" data-i18n="visit_hours_val">Not listed</span></dd></div>
+            <div class="kv"><dt data-i18n="visit_access_lbl">Access</dt><dd data-i18n="visit_access_val">Confirm before travelling</dd></div>
+            <div class="kv"><dt data-i18n="visit_town_lbl">Nearest town</dt><dd data-i18n="visit_town_val">Nainwa</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div>
+        <div class="info-card reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18"/><path d="M5 20V9l7-5 7 5v11"/><path d="M10 20v-5h4v5"/></svg>
+            <span data-i18n="get_here_title">Getting here</span>
+          </h3>
+          <p style="font-size:.92rem;color:var(--ink-soft);margin-bottom:1rem" data-i18n="get_here_p">
+            The pin is in rural Bundi district. Use the linked map for turn-by-turn directions
+            from your starting point, then confirm the last stretch locally. Road conditions and
+            access details are not available in the public listing.
+          </p>
+          <dl style="margin:0">
+            <div class="kv"><dt data-i18n="get_here_dist_lbl">District</dt><dd data-i18n="get_here_dist_val">Bundi, Rajasthan</dd></div>
+            <div class="kv"><dt data-i18n="get_here_tehsil_lbl">Tehsil</dt><dd data-i18n="get_here_tehsil_val">Nainwa</dd></div>
+            <div class="kv"><dt data-i18n="get_here_village_lbl">Nearby village</dt><dd data-i18n="get_here_village_val">Soonsadiya</dd></div>
+            <div class="kv"><dt data-i18n="get_here_pin_lbl">Pin locality</dt><dd data-i18n="get_here_pin_val">Lakshmipura</dd></div>
+          </dl>
+          <p class="hint" style="margin-top:.9rem" data-i18n="get_here_hint">
+            Do not rely on estimated travel times; check the route and access with the farm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+      <h2 data-i18n="contact_title">Contact the farm.</h2>
+      <p class="lede" data-i18n="contact_lede">
+        Get in touch directly with owner Prince Bharadwaj for visits, harvest inquiries, or route guidance.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <ul class="contact-list">
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <div>
+              <strong data-i18n="contact_owner_lbl">Owner</strong>
+              <span style="font-size:1.05rem;font-weight:600;color:var(--bark)" data-i18n="contact_owner_val">Prince Bharadwaj</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6.5C4 5.1 5.1 4 6.5 4h1.2c.6 0 1.1.4 1.3 1l.9 3c.1.5 0 1-.4 1.3L8 10.7a12 12 0 0 0 5.3 5.3l1.4-1.5c.3-.4.8-.5 1.3-.4l3 .9c.6.2 1 .7 1 1.3v1.2c0 1.4-1.1 2.5-2.5 2.5A15.5 15.5 0 0 1 4 6.5z"/></svg></span>
+            <div>
+              <strong data-i18n="contact_phone_lbl">Phone / WhatsApp</strong>
+              <a href="tel:+917425812149" style="font-weight:600;color:var(--ink);font-size:1.02rem">+91 74258 12149</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>
+            <div>
+              <strong data-i18n="contact_email_lbl">Email</strong>
+              <a href="mailto:panditprince074@gmail.com" style="color:var(--ink);word-break:break-all">panditprince074@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <div>
+              <strong data-i18n="contact_addr_lbl">Address</strong>
+              <span data-i18n-html="contact_addr_val">Lakshmipura, Soonsadiya, Nainwa Tehsil,<br>Bundi, Rajasthan, India</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong data-i18n="contact_hours_lbl">Visiting hours</strong>
+              <span data-i18n="contact_hours_val">Confirm with the family before visiting</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="visit-actions">
+          <a class="btn btn-dark" href="tel:+917425812149" data-i18n="btn_call">Call (+91 74258 12149)</a>
+          <a class="btn btn-outline" href="https://wa.me/917425812149" target="_blank" rel="noopener" data-i18n="btn_wa">Message on WhatsApp</a>
+        </div>
+      </div>
+
+      <form class="enquiry reveal" id="enquiryForm" novalidate>
+        <div class="two">
+          <div class="field">
+            <label for="fname" data-i18n="form_name_lbl">Your name</label>
+            <input id="fname" name="name" type="text" placeholder="Full name" data-i18n-ph="form_name_ph" required>
+          </div>
+          <div class="field">
+            <label for="fphone" data-i18n="form_contact_lbl">Phone or email</label>
+            <input id="fphone" name="contact" type="text" placeholder="How to reach you" data-i18n-ph="form_contact_ph" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="freason" data-i18n="form_reason_lbl">Reason for writing</label>
+          <select id="freason" name="reason">
+            <option data-i18n="form_opt_visit">Planning a visit</option>
+            <option data-i18n="form_opt_produce">Produce / harvest enquiry</option>
+            <option data-i18n="form_opt_general">General question</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fmsg" data-i18n="form_msg_lbl">Message</label>
+          <textarea id="fmsg" name="message" placeholder="Tell us a little about what you have in mind…" data-i18n-ph="form_msg_ph" required></textarea>
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <button class="btn btn-primary" type="button" id="btnSubmitWa" style="flex:1;min-width:180px;justify-content:center;background:#25D366;color:#fff;border-color:#25D366">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.5 11.64c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.13-.17.25-.65.8-.8 1-.15.19-.3.21-.55.08-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.02 2.6c.13.16 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+            <span data-i18n="form_submit_wa">Send on WhatsApp</span>
+          </button>
+          <button class="btn btn-primary" type="submit" id="btnSubmitEmail" style="flex:1;min-width:180px;justify-content:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            <span data-i18n="form_submit_email">Send via Email</span>
+          </button>
+        </div>
+        <p class="form-note" id="formNote" data-i18n="form_note">
+          Send your enquiry directly to Prince Bharadwaj via WhatsApp or email.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="#top" style="text-decoration:none">
+          <span class="brand-mark">तौ</span>
+          <span class="brand-text">
+            <span class="brand-name">Tau Ji Farm</span>
+            <span class="brand-sub" data-i18n="foot_brand_sub">Prince Bharadwaj · Pandit Vishnu Dutt</span>
+          </span>
+        </a>
+        <p data-i18n="foot_desc">Tau Ji Farm is listed near Lakshmipura, Soonsadiya — Nainwa Tehsil, Bundi district, Rajasthan.</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4 data-i18n="foot_farm_h4">The farm</h4>
+          <ul>
+            <li><a href="#about" data-i18n="foot_story">Our story</a></li>
+            <li><a href="#growing" data-i18n="foot_grow">What we grow</a></li>
+            <li><a href="#gallery" data-i18n="foot_gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="foot_visit_h4">Visit</h4>
+          <ul>
+            <li><a href="#visit" data-i18n-html="foot_loc">Location &amp; map</a></li>
+            <li><a href="https://www.google.com/maps/dir/?api=1&destination=25.5894322,75.9893278" target="_blank" rel="noopener" data-i18n="btn_directions">Get directions</a></li>
+            <li><a href="#contact" data-i18n="foot_contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="credits">
+      <b data-i18n="credits_important">Important:</b> <span data-i18n="credits_text">The public map listing provided the farm name and map pin only. Phone,
+      email, opening times, access, crops, livestock and facilities were not independently confirmed.
+      The agricultural text is regional context; please verify all farm-specific details with the family.
+      All photographs below are representative images, not photos of Tau Ji Farm, sourced from Wikimedia Commons under their respective open licences:
+      File-level credits and licences (click through for sources):</span>
+      <a href="https://commons.wikimedia.org/wiki/File:Agriculture_farms_in_Aravalli_Hills,_Udaipur_Rajasthan_India_2015_c.jpg" target="_blank" rel="noopener">Aravalli farms (TeshTesh, CC BY-SA 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Golden_wheat_field_2.jpg" target="_blank" rel="noopener">Golden wheat (Nupur Dasgupta, CC BY 2.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Agriculture_Rajasthan_India_-_2009_Mustard_crop.jpg" target="_blank" rel="noopener">Mustard (Trees ForTheFuture, CC BY 2.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Tractor_ploughing_field_2.jpg" target="_blank" rel="noopener">Tractor ploughing (abhiriksh, CC BY-SA 3.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:ILRI,_Stevie_Mann_-_Villager_and_calf_share_milk_from_cow_in_Rajasthan,_India.jpg" target="_blank" rel="noopener">Cow and calf (ILRI / Stevie Mann, CC BY 2.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Mango_Orchard_in_Nazra_Village,_Benipatti_Block,_Madhubani_District,_Bihar,_India.jpg" target="_blank" rel="noopener">Mango orchard (Mohammad Anees Qamar, CC BY 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Woman_harvesting_wheat,_Raisen_district,_Madhya_Pradesh,_India_ggia_version.jpg" target="_blank" rel="noopener">Wheat harvest (Yann Forget, CC BY-SA 3.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Wheat_plants_in_field_in_CIAE_001.jpg" target="_blank" rel="noopener">Wheat plants (Suyash Dwivedi, CC BY-SA 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Village_water_well_in_India.jpg" target="_blank" rel="noopener">Village well (Brindha Sakthivel, CC BY-SA 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Apna_Khet_Village_Malasar_Farm_View.jpg" target="_blank" rel="noopener">Malasar farm view (Harman Godara, CC0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Rural_south_Rajasthan_Farming_Agriculture_India_March_2015.jpg" target="_blank" rel="noopener">South Rajasthan farms (TeshTesh, CC BY-SA 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Agriculture_farms_in_Aravalli_Hills,_Udaipur_Rajasthan_India_2015_e.jpg" target="_blank" rel="noopener">Aravalli fields (TeshTesh, CC BY-SA 4.0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Wheat_fields_IN_Haryana.jpg" target="_blank" rel="noopener">Haryana wheat (Aman Rania, CC0)</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Field_ploughing_by_tractor.jpg" target="_blank" rel="noopener">Field ploughing (abhiriksh, CC BY-SA 3.0)</a>.
+      <span data-i18n="credits_mod">Modifications: resized and recompressed.</span>
+      <br>
+      &copy; <span id="year">2026</span> <span data-i18n="credits_copy">Tau Ji Farm (Pandit Vishnu Dutt). Map data &copy; Google.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
+  <figure>
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<!-- Floating actions -->
+<div class="float-actions" id="floatActions">
+  <a class="float-btn float-wa" href="https://wa.me/917425812149" target="_blank" rel="noopener" id="floatWa" aria-label="WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.5 11.64c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.13-.17.25-.65.8-.8 1-.15.19-.3.21-.55.08-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.02 2.6c.13.16 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.59.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+    <span data-i18n="float_wa_text">WhatsApp</span>
+  </a>
+  <button class="float-btn float-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+</div>
+<div class="toast" id="toastMsg" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   SITE CONFIG — Verified contact details
+   ========================================================= */
+const FARM = {
+  owner: "Prince Bharadwaj",
+  phone: "+91 74258 12149",
+  phoneDigits: "917425812149",
+  email: "panditprince074@gmail.com",
+  lat: 25.5894322,
+  lng: 75.9893278
+};
+
+/* =========================================================
+   i18n TRANSLATIONS (English & Hindi)
+   ========================================================= */
+const I18N = {
+  en: {
+    lang_btn: "हिन्दी",
+    brand_sub: "Bundi · Rajasthan",
+    nav_farm: "The Farm",
+    nav_grow: "What We Grow",
+    nav_gallery: "Gallery",
+    nav_visit: "Visit",
+    nav_cta: "Get in Touch",
+    hero_image_note: "Representative regional photo · not the farm",
+    hero_eyebrow: "Lakshmipura · Soonsadiya · Nainwa, Bundi",
+    hero_title: "Tau Ji Farm <em>&amp;</em> the land of Pandit Vishnu&nbsp;Dutt",
+    hero_sub: "A farm in the Bundi countryside, in a landscape shaped by seasonal fields, village life, and the long rhythms of rural Rajasthan.",
+    hero_btn_directions: "Directions to the farm",
+    hero_btn_gallery: "See the farm in pictures",
+    hero_meta_location: "Nainwa Tehsil, Bundi district",
+    hero_meta_coords: "25.5894° N, 75.9893° E",
+    hero_meta_note: "Check visiting details first",
+    about_eyebrow: "About the location",
+    about_title: "Find the farm<br>in Bundi district.",
+    about_p1: "Tau Ji Farm (Pandit Vishnu Dutt) is listed in <strong>Lakshmipura</strong>, near Soonsadiya village in Nainwa Tehsil, Bundi district. The location and farm name come from the public map listing; a fuller account of the family, its history and the land is best told by the people who work it.",
+    about_p2: "Bundi's farming calendar follows two broad seasons: <em>rabi</em>, the cool-season crops, and <em>kharif</em>, which follows the monsoon. This page introduces that local setting; the farm's crops, livestock, facilities and visiting arrangements have not been confirmed and should be updated by the family.",
+    about_p3: "If you are hoping to visit, please contact the family first. Access, opening times, available activities and hospitality have not been confirmed in the public listing.",
+    badge_rep_image: "Representative image",
+    stat_lakshmipura: "Lakshmipura",
+    stat_locality: "Map pin locality",
+    stat_soonsadiya: "Soonsadiya",
+    stat_village: "Nearby village",
+    stat_nainwa: "Nainwa",
+    stat_tehsil: "Tehsil",
+    stat_bundi: "Bundi",
+    stat_district: "District · Rajasthan",
+    crops_eyebrow: "From the fields",
+    crops_title: "A farm in Rajasthan's seasons",
+    crops_lede: "These cards describe common crops and farm life in the wider region, not a confirmed inventory for Tau Ji Farm. Please check with the family before enquiring about specific produce or activities.",
+    crop_wheat_title: "Wheat",
+    crop_wheat_desc: "A familiar <em>rabi</em> crop across the region. Tau Ji Farm's current planting has not been confirmed.",
+    crop_wheat_season: "Regional context · Rabi",
+    crop_mustard_title: "Mustard",
+    crop_mustard_desc: "A winter crop seen in Rajasthan's farm landscapes. Confirm with the family whether it is grown here.",
+    crop_mustard_season: "Regional context · Rabi",
+    crop_orchards_title: "Orchards &amp; trees",
+    crop_orchards_desc: "Fruit trees and shade are part of many rural holdings; orchard details for this farm are not listed.",
+    crop_orchards_season: "Ask the family",
+    crop_livestock_title: "Livestock",
+    crop_livestock_desc: "Livestock is common on farms in the area. Whether Tau Ji Farm keeps animals or sells dairy is unconfirmed.",
+    crop_livestock_season: "Ask the family",
+    crop_veg_title: "Seasonal vegetables",
+    crop_veg_desc: "Vegetable growing varies with water and season. No crop list is available for this farm yet.",
+    crop_veg_season: "Season dependent",
+    crop_other_title: "Other field crops",
+    crop_other_desc: "Pulses and fodder crops are part of the wider agricultural mix; ask the family about the current season.",
+    crop_other_season: "Varies by season",
+    gal_eyebrow: "Gallery",
+    gal_title: "Rajasthan farming,<br>through the seasons.",
+    gal_lede: "Representative images from farms and rural settings across India — not photographs of Tau Ji Farm. Click any picture to open it full size.",
+    gal_item_1: "Aravalli region · representative image",
+    gal_item_2: "Golden wheat · representative image",
+    gal_item_3: "Mustard · representative image",
+    gal_item_4: "Wheat harvest · representative image",
+    gal_item_5: "Wheat plants · representative image",
+    gal_item_6: "Tractor ploughing · representative image",
+    gal_item_7: "Field ploughing · representative image",
+    gal_item_8: "Cattle · representative image",
+    gal_item_9: "Orchard · representative image",
+    gal_item_10: "Village well · representative image",
+    gal_item_11: "Malasar · representative image",
+    gal_item_12: "South Rajasthan · representative image",
+    gal_item_13: "Haryana · representative image",
+    gal_item_14: "Near Udaipur · representative image",
+    gal_cap_1: "Agricultural fields in the Aravalli region of Rajasthan — representative image",
+    gal_cap_2: "Golden wheat in a field — representative image",
+    gal_cap_3: "Mustard crop in Rajasthan — representative image",
+    gal_cap_4: "Wheat harvest in Raisen district, Madhya Pradesh — representative image",
+    gal_cap_5: "Wheat plants in a field — representative image",
+    gal_cap_6: "Tractor ploughing a field — representative image",
+    gal_cap_7: "Field ploughing — representative image",
+    gal_cap_8: "Cattle at a village home in Rajasthan — representative image",
+    gal_cap_9: "A mango orchard in Bihar — representative image, not the farm",
+    gal_cap_10: "A village well in India — representative image",
+    gal_cap_11: "A farm view from Malasar village — representative image",
+    gal_cap_12: "Farming landscape in south Rajasthan — representative image",
+    gal_cap_13: "Wheat field in Haryana — representative image",
+    gal_cap_14: "Agricultural land near Udaipur, Rajasthan — representative image",
+    gal_note: "Every photo is a representative image from Wikimedia Commons, not a photo of Tau Ji Farm. Open licences and per-image credit links are provided in the footer. Replace these with the farm's own photographs when available.",
+    visit_eyebrow: "Find us",
+    visit_title: "How to find the farm",
+    visit_lede: "The map listing places Tau Ji Farm near Lakshmipura and Soonsadiya, in Nainwa Tehsil, Bundi district. Confirm the final route with the family before travelling.",
+    visit_addr_title: "Address",
+    visit_address: "Tau Ji Farm (Pandit Vishnu Dutt)<br>Lakshmipura, Soonsadiya<br>Nainwa Tehsil, Bundi District<br>Rajasthan, India",
+    btn_gmaps: "Open in Google Maps",
+    btn_directions: "Get directions",
+    visit_info_title: "Visiting",
+    visit_season_lbl: "Visiting season",
+    visit_season_val: "Ask the family",
+    visit_hours_lbl: "Opening times",
+    visit_hours_val: "Not listed",
+    visit_access_lbl: "Access",
+    visit_access_val: "Confirm before travelling",
+    visit_town_lbl: "Nearest town",
+    visit_town_val: "Nainwa",
+    get_here_title: "Getting here",
+    get_here_p: "The pin is in rural Bundi district. Use the linked map for turn-by-turn directions from your starting point, then confirm the last stretch locally. Road conditions and access details are not available in the public listing.",
+    get_here_dist_lbl: "District",
+    get_here_dist_val: "Bundi, Rajasthan",
+    get_here_tehsil_lbl: "Tehsil",
+    get_here_tehsil_val: "Nainwa",
+    get_here_village_lbl: "Nearby village",
+    get_here_village_val: "Soonsadiya",
+    get_here_pin_lbl: "Pin locality",
+    get_here_pin_val: "Lakshmipura",
+    get_here_hint: "Do not rely on estimated travel times; check the route and access with the farm.",
+    contact_eyebrow: "Contact",
+    contact_title: "Contact the farm.",
+    contact_owner_lbl: "Owner",
+    contact_owner_val: "Prince Bharadwaj",
+    contact_lede: "Get in touch directly with owner Prince Bharadwaj for visits, harvest inquiries, or route guidance.",
+    contact_phone_lbl: "Phone / WhatsApp",
+    contact_email_lbl: "Email",
+    contact_addr_lbl: "Address",
+    contact_addr_val: "Lakshmipura, Soonsadiya, Nainwa Tehsil,<br>Bundi, Rajasthan, India",
+    contact_hours_lbl: "Visiting hours",
+    contact_hours_val: "Confirm with the family before visiting",
+    btn_call: "Call (+91 74258 12149)",
+    btn_wa: "Message on WhatsApp",
+    form_name_lbl: "Your name",
+    form_name_ph: "Full name",
+    form_contact_lbl: "Phone or email",
+    form_contact_ph: "How to reach you",
+    form_reason_lbl: "Reason for writing",
+    form_opt_visit: "Planning a visit",
+    form_opt_produce: "Produce / harvest enquiry",
+    form_opt_general: "General question",
+    form_msg_lbl: "Message",
+    form_msg_ph: "Tell us a little about what you have in mind…",
+    form_submit_wa: "Send on WhatsApp",
+    form_submit_email: "Send via Email",
+    form_note: "Send your enquiry directly to Prince Bharadwaj via WhatsApp or email.",
+    foot_brand_sub: "Prince Bharadwaj · Pandit Vishnu Dutt",
+    foot_desc: "Tau Ji Farm is listed near Lakshmipura, Soonsadiya — Nainwa Tehsil, Bundi district, Rajasthan.",
+    foot_farm_h4: "The farm",
+    foot_story: "Our story",
+    foot_grow: "What we grow",
+    foot_gallery: "Gallery",
+    foot_visit_h4: "Visit",
+    foot_loc: "Location &amp; map",
+    foot_contact: "Contact",
+    credits_important: "Important:",
+    credits_text: "The public map listing provided the farm name and map pin only. Phone, email, opening times, access, crops, livestock and facilities were not independently confirmed. The agricultural text is regional context; please verify all farm-specific details with the family. All photographs below are representative images, not photos of Tau Ji Farm, sourced from Wikimedia Commons under their respective open licences: File-level credits and licences (click through for sources):",
+    credits_mod: "Modifications: resized and recompressed.",
+    credits_copy: "Tau Ji Farm (Pandit Vishnu Dutt). Map data &copy; Google.",
+    lb_close: "Close",
+    lb_prev: "Previous",
+    lb_next: "Next",
+    lb_title: "Photo viewer",
+    float_wa_text: "WhatsApp",
+    form_err_req: "Please fill in your name, contact and message.",
+    form_err_email: "Please provide valid contact details.",
+    form_msg_open: "Opening your email app with your message…",
+    form_msg_wa_open: "Opening WhatsApp with your message…",
+    form_subject_prefix: "Enquiry for Prince Bharadwaj — "
+  },
+  hi: {
+    lang_btn: "English",
+    brand_sub: "बूंदी · राजस्थान",
+    nav_farm: "हमारा खेत",
+    nav_grow: "हम क्या उगाते हैं",
+    nav_gallery: "गैलरी",
+    nav_visit: "यहाँ आएँ",
+    nav_cta: "संपर्क करें",
+    hero_image_note: "प्रतिनिधि क्षेत्रीय फ़ोटो · खेत की नहीं",
+    hero_eyebrow: "Lakshmipura · Soonsadiya · Nainwa, Bundi",
+    hero_title: "Tau Ji Farm <em>एवं</em> Pandit Vishnu&nbsp;Dutt की भूमि",
+    hero_sub: "Bundi के ग्रामीण इलाके में एक खेत, मौसमी फ़सलों, गाँव के जीवन और ग्रामीण Rajasthan की पुरानी लय से बना एक परिदृश्य।",
+    hero_btn_directions: "खेत तक दिशा-निर्देश",
+    hero_btn_gallery: "तस्वीरों में खेत देखें",
+    hero_meta_location: "Nainwa तहसील, Bundi ज़िला",
+    hero_meta_coords: "25.5894° उ॰, 75.9893° पू॰",
+    hero_meta_note: "पहले आने की जानकारी लें",
+    about_eyebrow: "स्थान के बारे में",
+    about_title: "खेत खोजें<br>Bundi ज़िले में।",
+    about_p1: "Tau Ji Farm (Pandit Vishnu Dutt) <strong>Lakshmipura</strong> में सूचीबद्ध है, जो Nainwa तहसील, Bundi ज़िले में Soonsadiya गाँव के पास है। स्थान और खेत का नाम सार्वजनिक मानचित्र सूची से लिया गया है; परिवार, उसका इतिहास और ज़मीन की पूरी कहानी सबसे अच्छी तरह वही लोग बता सकते हैं जो इस पर काम करते हैं।",
+    about_p2: "Bundi का कृषि कैलेंडर दो मुख्य मौसमों का पालन करता है: <em>रबी</em> (ठंड के मौसम की फ़सलें) और <em>ख़रीफ़</em> (जो मानसून के बाद आती हैं)। यह पृष्ठ उस स्थानीय परिवेश का परिचय देता है; खेत की फ़सलों, पशुधन, सुविधाओं और आने की व्यवस्था की पुष्टि नहीं हुई है और परिवार द्वारा अपडेट की जानी चाहिए।",
+    about_p3: "यदि आप आना चाहते हैं, तो कृपया पहले परिवार से संपर्क करें। पहुँच, खुलने का समय, उपलब्ध गतिविधियाँ और आतिथ्य की पुष्टि सार्वजनिक सूची में नहीं की गई है।",
+    badge_rep_image: "प्रतिनिधि छवि",
+    stat_lakshmipura: "Lakshmipura",
+    stat_locality: "मानचित्र पिन इलाक़ा",
+    stat_soonsadiya: "Soonsadiya",
+    stat_village: "निकटवर्ती गाँव",
+    stat_nainwa: "Nainwa",
+    stat_tehsil: "तहसील",
+    stat_bundi: "Bundi",
+    stat_district: "ज़िला · Rajasthan",
+    crops_eyebrow: "खेतों से",
+    crops_title: "Rajasthan के मौसमों में एक खेत",
+    crops_lede: "ये कार्ड क्षेत्र में आम फ़सलों और कृषि जीवन का वर्णन करते हैं, Tau Ji Farm की पुष्ट सूची नहीं। कृपया विशिष्ट उत्पाद या गतिविधियों के बारे में पूछने से पहले परिवार से जाँच लें।",
+    crop_wheat_title: "गेहूँ",
+    crop_wheat_desc: "क्षेत्र में एक जानी-मानी <em>रबी</em> फ़सल। Tau Ji Farm की वर्तमान बुआई की पुष्टि नहीं हुई है।",
+    crop_wheat_season: "क्षेत्रीय संदर्भ · रबी",
+    crop_mustard_title: "सरसों",
+    crop_mustard_desc: "Rajasthan के कृषि परिदृश्य में दिखने वाली सर्दियों की फ़सल। परिवार से पुष्टि करें कि यहाँ उगाई जाती है या नहीं।",
+    crop_mustard_season: "क्षेत्रीय संदर्भ · रबी",
+    crop_orchards_title: "बाग़ान और पेड़",
+    crop_orchards_desc: "फलों के पेड़ और छाया कई ग्रामीण जोतों का हिस्सा हैं; इस खेत के बगीचे का विवरण सूचीबद्ध नहीं है।",
+    crop_orchards_season: "परिवार से पूछें",
+    crop_livestock_title: "पशुधन",
+    crop_livestock_desc: "क्षेत्र के खेतों में पशुधन आम है। Tau Ji Farm जानवर पालता है या डेयरी बेचता है, इसकी पुष्टि नहीं है।",
+    crop_livestock_season: "परिवार से पूछें",
+    crop_veg_title: "मौसमी सब्ज़ियाँ",
+    crop_veg_desc: "सब्ज़ी की खेती पानी और मौसम के अनुसार बदलती है। इस खेत के लिए अभी कोई फ़सल सूची उपलब्ध नहीं है।",
+    crop_veg_season: "मौसम पर निर्भर",
+    crop_other_title: "अन्य फ़सलें",
+    crop_other_desc: "दालें और चारे की फ़सलें व्यापक कृषि मिश्रण का हिस्सा हैं; वर्तमान मौसम के बारे में परिवार से पूछें।",
+    crop_other_season: "मौसम के अनुसार बदलती हैं",
+    gal_eyebrow: "गैलरी",
+    gal_title: "Rajasthan की खेती,<br>मौसमों के साथ।",
+    gal_lede: "भारत भर के खेतों और ग्रामीण परिवेश से प्रतिनिधि छवियाँ — Tau Ji Farm की तस्वीरें नहीं। पूर्ण आकार में देखने के लिए किसी भी चित्र पर क्लिक करें।",
+    gal_item_1: "Aravalli क्षेत्र · प्रतिनिधि चित्र",
+    gal_item_2: "सुनहरा गेहूँ · प्रतिनिधि चित्र",
+    gal_item_3: "सरसों · प्रतिनिधि चित्र",
+    gal_item_4: "गेहूँ की कटाई · प्रतिनिधि चित्र",
+    gal_item_5: "गेहूँ के पौधे · प्रतिनिधि चित्र",
+    gal_item_6: "ट्रैक्टर से जुताई · प्रतिनिधि चित्र",
+    gal_item_7: "खेत की जुताई · प्रतिनिधि चित्र",
+    gal_item_8: "पशु · प्रतिनिधि चित्र",
+    gal_item_9: "बाग़ान · प्रतिनिधि चित्र",
+    gal_item_10: "गाँव का कुआँ · प्रतिनिधि चित्र",
+    gal_item_11: "Malasar · प्रतिनिधि चित्र",
+    gal_item_12: "दक्षिण Rajasthan · प्रतिनिधि चित्र",
+    gal_item_13: "Haryana · प्रतिनिधि चित्र",
+    gal_item_14: "Udaipur के पास · प्रतिनिधि चित्र",
+    gal_cap_1: "Rajasthan के Aravalli क्षेत्र में कृषि क्षेत्र — प्रतिनिधि चित्र",
+    gal_cap_2: "खेत में सुनहरा गेहूँ — प्रतिनिधि चित्र",
+    gal_cap_3: "Rajasthan में सरसों की फ़सल — प्रतिनिधि चित्र",
+    gal_cap_4: "रायसेन ज़िले (मध्य प्रदेश) में गेहूँ की कटाई — प्रतिनिधि चित्र",
+    gal_cap_5: "खेत में गेहूँ के पौधे — प्रतिनिधि चित्र",
+    gal_cap_6: "ट्रैक्टर से खेत की जुताई — प्रतिनिधि चित्र",
+    gal_cap_7: "खेत की जुताई — प्रतिनिधि चित्र",
+    gal_cap_8: "Rajasthan में एक गाँव के घर पर गाय और बछड़ा — प्रतिनिधि चित्र",
+    gal_cap_9: "बिहार में एक आम का बगीचा — प्रतिनिधि चित्र, खेत का नहीं",
+    gal_cap_10: "भारत में एक गाँव का कुआँ — प्रतिनिधि चित्र",
+    gal_cap_11: "मलासर गाँव से खेत का दृश्य — प्रतिनिधि चित्र",
+    gal_cap_12: "दक्षिण Rajasthan में कृषि परिदृश्य — प्रतिनिधि चित्र",
+    gal_cap_13: "Haryana में गेहूँ का खेत — प्रतिनिधि चित्र",
+    gal_cap_14: "Udaipur, Rajasthan के पास कृषि भूमि — प्रतिनिधि चित्र",
+    gal_note: "प्रत्येक फ़ोटो विकिमीडिया कॉमन्स से एक प्रतिनिधि चित्र है, Tau Ji Farm की फ़ोटो नहीं। ओपन लाइसेंस और प्रति-चित्र क्रेडिट लिंक फ़ुटर में दिए गए हैं। उपलब्ध होने पर इन्हें खेत की अपनी तस्वीरों से बदलें।",
+    visit_eyebrow: "खेत तक पहुँचें",
+    visit_title: "खेत कैसे खोजें",
+    visit_lede: "मानचित्र सूची में Tau Ji Farm को Lakshmipura और Soonsadiya के पास, Nainwa तहसील, Bundi ज़िले में दर्शाया गया है। यात्रा से पहले अंतिम मार्ग की पुष्टि परिवार से करें।",
+    visit_addr_title: "पता",
+    visit_address: "Tau Ji Farm (Pandit Vishnu Dutt)<br>Lakshmipura, Soonsadiya<br>Nainwa तहसील, Bundi ज़िला<br>Rajasthan, भारत",
+    btn_gmaps: "Google Maps में खोलें",
+    btn_directions: "रास्ता पाएँ",
+    visit_info_title: "भ्रमण की जानकारी",
+    visit_season_lbl: "भ्रमण का मौसम",
+    visit_season_val: "परिवार से पूछें",
+    visit_hours_lbl: "खुलने का समय",
+    visit_hours_val: "सूचीबद्ध नहीं",
+    visit_access_lbl: "पहुँच",
+    visit_access_val: "यात्रा से पहले पुष्टि करें",
+    visit_town_lbl: "निकटतम शहर",
+    visit_town_val: "Nainwa",
+    get_here_title: "यहाँ कैसे पहुँचें",
+    get_here_p: "पिन ग्रामीण Bundi ज़िले में है। अपने शुरुआती बिंदु से मोड़-दर-मोड़ दिशा-निर्देश के लिए लिंक किए गए मानचित्र का उपयोग करें, फिर आख़िरी हिस्से की पुष्टि स्थानीय स्तर पर करें। सड़क की स्थिति और पहुँच का विवरण सार्वजनिक सूची में उपलब्ध नहीं है।",
+    get_here_dist_lbl: "ज़िला",
+    get_here_dist_val: "Bundi, Rajasthan",
+    get_here_tehsil_lbl: "तहसील",
+    get_here_tehsil_val: "Nainwa",
+    get_here_village_lbl: "निकटवर्ती गाँव",
+    get_here_village_val: "Soonsadiya",
+    get_here_pin_lbl: "पिन इलाक़ा",
+    get_here_pin_val: "Lakshmipura",
+    get_here_hint: "अनुमानित यात्रा समय पर निर्भर न रहें; मार्ग और पहुँच की जाँच खेत से करें।",
+    contact_eyebrow: "संपर्क",
+    contact_title: "खेत से संपर्क करें।",
+    contact_owner_lbl: "मालिक",
+    contact_owner_val: "प्रिंस भारद्वाज",
+    contact_lede: "भ्रमण, उपज की पूछताछ या रास्ते की जानकारी के लिए सीधे मालिक प्रिंस भारद्वाज से संपर्क करें।",
+    contact_phone_lbl: "फ़ोन / WhatsApp",
+    contact_email_lbl: "ईमेल",
+    contact_addr_lbl: "पता",
+    contact_addr_val: "Lakshmipura, Soonsadiya, Nainwa तहसील,<br>Bundi, Rajasthan, भारत",
+    contact_hours_lbl: "भ्रमण के घंटे",
+    contact_hours_val: "आने से पहले परिवार से पुष्टि करें",
+    btn_call: "कॉल करें (+91 74258 12149)",
+    btn_wa: "WhatsApp पर संदेश भेजें",
+    form_name_lbl: "आपका नाम",
+    form_name_ph: "पूरा नाम",
+    form_contact_lbl: "फ़ोन या ईमेल",
+    form_contact_ph: "आपसे संपर्क कैसे करें",
+    form_reason_lbl: "लिखने का कारण",
+    form_opt_visit: "भ्रमण की योजना",
+    form_opt_produce: "उपज / फ़सल पूछताछ",
+    form_opt_general: "सामान्य प्रश्न",
+    form_msg_lbl: "संदेश",
+    form_msg_ph: "हमें बताएँ कि आपके मन में क्या है…",
+    form_submit_wa: "WhatsApp पर भेजें",
+    form_submit_email: "ईमेल द्वारा भेजें",
+    form_note: "अपनी पूछताछ सीधे प्रिंस भारद्वाज को WhatsApp या ईमेल द्वारा भेजें।",
+    foot_brand_sub: "प्रिंस भारद्वाज · पंडित विष्णु दत्त",
+    foot_desc: "Tau Ji Farm Lakshmipura, Soonsadiya — Nainwa तहसील, Bundi ज़िला, Rajasthan के पास सूचीबद्ध है।",
+    foot_farm_h4: "खेत",
+    foot_story: "हमारी कहानी",
+    foot_grow: "हम क्या उगाते हैं",
+    foot_gallery: "गैलरी",
+    foot_visit_h4: "भ्रमण",
+    foot_loc: "स्थान और मानचित्र",
+    foot_contact: "संपर्क",
+    credits_important: "महत्वपूर्ण:",
+    credits_text: "सार्वजनिक मानचित्र सूची में केवल खेत का नाम और मानचित्र पिन दिया गया था। फ़ोन, ईमेल, खुलने का समय, पहुँच, फ़सलें, पशुधन और सुविधाओं की स्वतंत्र पुष्टि नहीं की गई है। कृषि संबंधी पाठ क्षेत्रीय संदर्भ है; कृपया खेत-विशिष्ट सभी विवरणों की पुष्टि परिवार से करें। नीचे दी गई सभी तस्वीरें प्रतिनिधि चित्र हैं, Tau Ji Farm की फ़ोटो नहीं, जो विकिमीडिया कॉमन्स से उनके संबंधित ओपन लाइसेंस के तहत ली गई हैं: फ़ाइल-स्तरीय क्रेडिट और लाइसेंस (स्रोतों के लिए क्लिक करें):",
+    credits_mod: "संशोधन: आकार बदला और पुनः संपीड़ित किया।",
+    credits_copy: "Tau Ji Farm (Pandit Vishnu Dutt). मानचित्र डेटा &copy; Google.",
+    lb_close: "बंद करें",
+    lb_prev: "पिछला",
+    lb_next: "अगला",
+    lb_title: "फ़ोटो दर्शक",
+    float_wa_text: "WhatsApp",
+    form_err_req: "कृपया अपना नाम, संपर्क और संदेश भरें।",
+    form_err_email: "कृपया सही संपर्क विवरण प्रदान करें।",
+    form_msg_open: "आपका ईमेल ऐप खोल रहे हैं…",
+    form_msg_wa_open: "WhatsApp खोल रहे हैं…",
+    form_subject_prefix: "प्रिंस भारद्वाज के लिए पूछताछ — "
+  }
+};
+
+let currentLang = localStorage.getItem('site_lang') || 'en';
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('site_lang', lang);
+  document.documentElement.lang = lang;
+
+  const dict = I18N[lang] || I18N.en;
+
+  // Toggle button label
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.textContent = dict.lang_btn;
+    langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch language to Hindi' : 'Switch language to English');
+  }
+
+  // Update plain text elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      el.textContent = dict[key];
+    }
+  });
+
+  // Update HTML elements (preserving <em>, <strong>, <br>, <code>)
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (dict[key] !== undefined) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  // Update placeholder attributes
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (dict[key] !== undefined) {
+      el.placeholder = dict[key];
+    }
+  });
+
+  // Update Lightbox ARIA attributes
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+  const lbEl = document.getElementById('lightbox');
+  if (lbClose) lbClose.setAttribute('aria-label', dict.lb_close);
+  if (lbPrev) lbPrev.setAttribute('aria-label', dict.lb_prev);
+  if (lbNext) lbNext.setAttribute('aria-label', dict.lb_next);
+  if (lbEl) lbEl.setAttribute('aria-label', dict.lb_title);
+}
+
+// Language switch button click handler
+document.getElementById('langToggle').addEventListener('click', () => {
+  setLanguage(currentLang === 'en' ? 'hi' : 'en');
+});
+
+/* ---------- nav ---------- */
+const nav = document.getElementById('nav');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+const onScroll = () => nav.classList.toggle('is-stuck', window.scrollY > 40);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+navToggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+navLinks.addEventListener('click', e => {
+  if (e.target.tagName === 'A') {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
+/* ---------- reveal on scroll ---------- */
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach((el, i) => {
+    el.style.transitionDelay = (i % 4) * 60 + 'ms';
+    io.observe(el);
+  });
+} else {
+  revealEls.forEach(el => el.classList.add('in'));
+}
+
+/* ---------- lightbox ---------- */
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbCap = document.getElementById('lbCap');
+const items = [...document.querySelectorAll('.gal-item')];
+let idx = 0, lastFocus = null;
+
+function openLb(i) {
+  idx = (i + items.length) % items.length;
+  const item = items[idx];
+  lbImg.src = item.dataset.src;
+  lbImg.alt = item.querySelector('img').alt;
+  const capKey = item.dataset.capKey;
+  const dict = I18N[currentLang] || I18N.en;
+  lbCap.textContent = (capKey && dict[capKey]) || item.dataset.cap || '';
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lbClose').focus();
+}
+function closeLb() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocus) lastFocus.focus();
+}
+function step(n) { openLb(idx + n); }
+
+items.forEach((item, i) => item.addEventListener('click', () => { lastFocus = item; openLb(i); }));
+document.getElementById('lbClose').addEventListener('click', closeLb);
+document.getElementById('lbPrev').addEventListener('click', () => step(-1));
+document.getElementById('lbNext').addEventListener('click', () => step(1));
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowRight') step(1);
+  if (e.key === 'ArrowLeft') step(-1);
+});
+
+/* swipes on touch */
+let tx = 0;
+lb.addEventListener('touchstart', e => { tx = e.changedTouches[0].clientX; }, { passive: true });
+lb.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+}, { passive: true });
+
+/* ---------- contact details ---------- */
+const phoneEl = document.querySelector('.js-phone');
+const waEl = document.querySelector('.js-whatsapp');
+
+function applyContact() {
+  const digits = (FARM.phone || '').replace(/[^\d+]/g, '');
+  if (digits) {
+    const phoneSlot = document.querySelector('.placeholder[data-field="phone"]');
+    if (phoneSlot) phoneSlot.outerHTML = `<a href="tel:${digits}">${FARM.phone}</a>`;
+    phoneEl.href = 'tel:' + digits;
+    phoneEl.hidden = false;
+    waEl.href = 'https://wa.me/' + digits.replace(/\D/g, '');
+    waEl.hidden = false;
+  }
+  if (FARM.email) {
+    const slot = document.querySelector('.placeholder[data-field="email"]');
+    if (slot) slot.outerHTML = `<a href="mailto:${FARM.email}">${FARM.email}</a>`;
+  }
+}
+applyContact();
+
+/* ---------- enquiry form (WhatsApp & Email redirect) ---------- */
+const form = document.getElementById('enquiryForm');
+const btnSubmitWa = document.getElementById('btnSubmitWa');
+
+if (btnSubmitWa) {
+  btnSubmitWa.addEventListener('click', () => {
+    const note = document.getElementById('formNote');
+    const dict = I18N[currentLang] || I18N.en;
+    if (!form.checkValidity()) {
+      note.textContent = dict.form_err_req;
+      note.style.color = '#a3421f';
+      form.reportValidity();
+      return;
+    }
+    const text = `Hello Prince Bharadwaj (Tau Ji Farm),\n\n*Name:* ${form.name.value}\n*Contact:* ${form.contact.value}\n*Reason:* ${form.reason.value}\n\n*Message:* ${form.message.value}`;
+    const url = `https://wa.me/${FARM.phoneDigits}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+    note.textContent = dict.form_msg_wa_open || 'Opening WhatsApp with your message…';
+    note.style.color = '#25D366';
+  });
+}
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const note = document.getElementById('formNote');
+    const dict = I18N[currentLang] || I18N.en;
+    if (!form.checkValidity()) {
+      note.textContent = dict.form_err_req;
+      note.style.color = '#a3421f';
+      form.reportValidity();
+      return;
+    }
+    const subject = encodeURIComponent((dict.form_subject_prefix || 'Enquiry for Prince Bharadwaj — ') + form.reason.value);
+    const body = encodeURIComponent(
+      'Name: ' + form.name.value + '\nContact: ' + form.contact.value + '\nReason: ' + form.reason.value + '\n\n' + form.message.value
+    );
+    window.location.href = `mailto:${FARM.email}?subject=${subject}&body=${body}`;
+    note.textContent = dict.form_msg_open;
+    note.style.color = '#3d5c3a';
+  });
+}
+
+/* ---------- back to top ---------- */
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (backToTop) {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }
+}, { passive: true });
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* ---------- year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- initialize language ---------- */
+setLanguage(currentLang);
+</script>
+</body>
+</html>
